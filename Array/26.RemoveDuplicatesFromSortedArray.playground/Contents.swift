@@ -50,6 +50,21 @@ func removeDuplicates2(_ nums: inout [Int]) -> Int {
     return nums.count
 }
 
+// Accept 1080ms 14.3MB
+func removeDuplicates3(_ nums: inout [Int]) -> Int {
+    var lastN = nums[0]
+    var index = 1
+    while index < nums.count {
+        if nums[index] == lastN {
+            nums.remove(at: index)
+        } else {
+            lastN = nums[index]
+            index += 1
+        }
+    }
+    return nums.count
+}
+
 var arr = [0,0,1,1,1,2,2,3,3,4]
-removeDuplicates2(&arr)
+removeDuplicates3(&arr)
 
