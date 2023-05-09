@@ -50,6 +50,7 @@ func removeDuplicates2(_ nums: inout [Int]) -> Int {
     return nums.count
 }
 
+// 不能使用for 循环, 会让数组越界
 // Accept 1080ms 14.3MB
 func removeDuplicates3(_ nums: inout [Int]) -> Int {
     var lastN = nums[0]
