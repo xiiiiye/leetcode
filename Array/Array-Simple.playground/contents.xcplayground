@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<playground version='6.0' target-platform='ios' buildActiveScheme='true' importAppTypes='true'>
+    <pages>
+        <page name='53.最大子数组之和'/>
+        <page name='35.查找索引'/>
+        <page name='27.删除元素'/>
+        <page name='26.删除重复数'/>
+        <page name='1.两数相加'/>
+        <page name='66.加一'/>
+    </pages>
+</playground>
