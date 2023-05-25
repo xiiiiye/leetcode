@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <playground version='6.0' target-platform='ios' buildActiveScheme='true' importAppTypes='true'>
     <pages>
+        <page name='121.买卖股票的最佳时机'/>
         <page name='119. 杨辉三角 II'/>
         <page name='118.杨辉三角'/>
         <page name='88. 合并两个有序数组'/>
@@ -11,6 +12,6 @@
         <page name='26.删除重复数'/>
         <page name='1.两数相加'/>
         <page name='排序算法'/>
-        <page name='121.买卖股票的最佳时机'/>
+        <page name='136. 只出现一次的数字'/>
     </pages>
 </playground>
