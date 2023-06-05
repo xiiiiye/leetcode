@@ -26,7 +26,7 @@ class TwoSum {
     func find(_ sum: Int) -> Bool {
         var dict = [Int: Int]()
         for num in arr {
-            if let res = dict[num] {
+            if let _ = dict[num] {
                 return true
             } else {
                 dict[sum - num] = num

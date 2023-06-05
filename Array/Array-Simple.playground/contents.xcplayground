@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <playground version='6.0' target-platform='ios' buildActiveScheme='true' importAppTypes='true'>
     <pages>
+        <page name='217. 存在重复元素'/>
         <page name='170.两数之和 III - 数据结构设计'/>
         <page name='169. 多数元素 '/>
         <page name='163.缺失的区间'/>
