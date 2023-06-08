@@ -49,3 +49,4 @@ func containsDuplicate(_ nums: [Int]) -> Bool {
 let nums = [1,2,3,1]
 //let nums = [1,2,3,4]
 containsDuplicate(nums)
+
