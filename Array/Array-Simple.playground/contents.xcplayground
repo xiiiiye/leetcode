@@ -18,5 +18,6 @@
         <page name='26.删除重复数'/>
         <page name='1.两数相加'/>
         <page name='排序算法'/>
+        <page name='228. 汇总区间'/>
     </pages>
 </playground>
