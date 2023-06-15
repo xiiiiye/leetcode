@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <playground version='6.0' target-platform='ios' buildActiveScheme='true' importAppTypes='true'>
     <pages>
+        <page name='228. 汇总区间'/>
         <page name='219. 存在重复元素 II'/>
         <page name='217. 存在重复元素'/>
         <page name='170.两数之和 III - 数据结构设计'/>
@@ -18,6 +19,5 @@
         <page name='26.删除重复数'/>
         <page name='1.两数相加'/>
         <page name='排序算法'/>
-        <page name='228. 汇总区间'/>
     </pages>
 </playground>
