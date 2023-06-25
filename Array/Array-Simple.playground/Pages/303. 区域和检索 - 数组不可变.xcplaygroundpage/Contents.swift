@@ -47,7 +47,6 @@ class NumArray1 {
 // 68ms, 15MB
 class NumArray {
     var sums: [Int]
-
     init(_ nums: [Int]) {
         sums = Array(repeating: 0, count: nums.count)
         for i in 0..<nums.count {
