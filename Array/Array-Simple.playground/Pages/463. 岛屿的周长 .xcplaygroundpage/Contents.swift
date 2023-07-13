@@ -118,13 +118,64 @@ func islandPerimeter2(_ grid: [[Int]]) -> Int {
     return result
 }
 
-// DFS
+// +4 -2 遇到岛屿直接+4, 相邻的是岛屿的时候再-2
+//324ms 50.00%, 14.2ms 60%
+func islandPerimeter3(_ grid: [[Int]]) -> Int {
+    if grid.count == 0 {
+        return 0
+    }
+    if grid[0].count == 0 {
+        return 0
+    }
+    var result = 0
+    for i in 0..<grid.count {
+        for j in 0..<grid[i].count {
+            if grid[i][j] == 1 {
+                result += 4
+                if i > 0, grid[i-1][j] == 1 {
+                    result -= 2
+                }
+                if j > 0, grid[i][j-1] == 1 {
+                    result -= 2
+                }
+            }
+        }
+    }
+    return result
+}
+
 func islandPerimeter(_ grid: [[Int]]) -> Int {
+    guard grid.count > 0 else {
+        return 0
+    }
+    var grid = grid
+    for i in 0..<grid.count {
+        for j in 0..<grid[0].count {
+            if grid[i][j] == 1 {
+                return dfs(&grid, i, j)
+            }
+        }
+    }
     return 0
 }
 
-//let grid = [[0,1,0,0],[1,1,1,0],[0,1,0,0],[1,1,0,0]]  // 16
-//let grid = [[1]]    // 4
-let grid = [[1,0]]  // 4
-islandPerimeter(grid)
 
+func dfs(_ grid: inout [[Int]], _ i: Int, _ j: Int) -> Int {
+    if (i < 0 || i >= grid.count || j < 0 || j >= grid[i].count) {
+        return 1
+    }
+    if grid[i][j] == 0 {
+        return 1
+    }
+    if grid[i][j] != 1 {
+        return 0
+    }
+    grid[i][j] = 2
+    return dfs(&grid, i + 1, j) + dfs(&grid, i - 1, j) + dfs(&grid, i, j - 1) + dfs(&grid, i, j + 1)
+}
+
+let grid = [[0,1,0,0],[1,1,1,0],[0,1,0,0],[1,1,0,0]]  // 16
+//let grid = [[1]]    // 4
+//let grid = [[1,0]]  // 4
+//let grid = [[1,1]]  // 6
+islandPerimeter(grid)
