@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <playground version='6.0' target-platform='ios' buildActiveScheme='true' importAppTypes='true'>
     <pages>
+        <page name='500. 键盘行'/>
         <page name='496. 下一个更大元素 I'/>
         <page name='495. 提莫攻击'/>
         <page name='485. 最大连续 1 的个数'/>
