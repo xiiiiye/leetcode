@@ -2,6 +2,7 @@
 <playground version='6.0' target-platform='ios' buildActiveScheme='true' importAppTypes='true'>
     <pages>
         <page name='概述'/>
+        <page name='剑指 Offer 06. 从尾到头打印链表'/>
         <page name='剑指 Offer 09. 用两个栈实现队列'/>
         <page name='剑指 Offer 30. 包含 min 函数的栈'/>
     </pages>
